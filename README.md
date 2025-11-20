@@ -1,4 +1,3 @@
-```markdown
 # 📐 Range-Based LCM Calculator
 
 A JavaScript project that computes the **Least Common Multiple (LCM)** of two numbers **and all integers between them**.  
