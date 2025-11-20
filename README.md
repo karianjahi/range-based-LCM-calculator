@@ -20,7 +20,7 @@ This challenge strengthens understanding of algorithms, looping logic, divisibil
 
 ## 📌 Overview
 
-What is implemented?:
+What is implemented?
 
 `smallestCommons([num1, num2])`
 
