@@ -19,4 +19,25 @@ const getLCM = (num1, num2) => {
   }
 };
 
+// A function that returns the smallest common multiple for the range
+const smallestCommons = (myArray) => {
+  myArray.sort((num1, num2) => num1 - num2);
+  let rangeValues = [];
+  let lcm = 1;
+  for (let i = myArray[0]; i <= myArray[1]; i++) rangeValues.push(i);
+  console.log(`Range of values: ${rangeValues}`);
+  for (let i = 1; i < rangeValues.length; i++) {
+    if (i == 1) {
+        lcm = getLCM(rangeValues[i-1], rangeValues[i]);
+        console.log(`lcm between ${rangeValues[i-1]} and ${rangeValues[i]} is ${lcm}`);
+    } else {
+        oldLcm = lcm
+        lcm = getLCM(lcm, rangeValues[i])
+         console.log(`lcm between ${oldLcm} and ${rangeValues[i]} is ${lcm}`);
+    }
+  }
+  return lcm;
+};
 
+const myArray = [5, 1];
+console.log(smallestCommons(myArray));
