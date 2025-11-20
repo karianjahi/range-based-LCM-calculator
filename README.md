@@ -36,7 +36,7 @@ This function:
 
 ## 🧩 User Stories
 
-1. You should have a **`smallestCommons`** function that accepts an array of two numbers.  
+1. We should have a **`smallestCommons`** function that accepts an array of two numbers.  
 2. The function should return the **smallest common multiple** for:
    - both input numbers  
    - and **every integer between them**  
