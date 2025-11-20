@@ -9,8 +9,14 @@ User Stories
 3 The function should handle input where the two numbers are not in numerical order.
 */
 
-const smallestCommons = (arrayOf2Nos) => {
-    return arrayOf2Nos;
-}
+// Function for calculating the LCM between 2 numbers
+const getLCM = (num1, num2) => {
+  let largerOfThe2 = Math.max(num1, num2);
+  while (true) {
+    if (largerOfThe2 % num1 == 0 && largerOfThe2 % num2 == 0)
+      return largerOfThe2;
+    largerOfThe2++;
+  }
+};
 
-console.log(smallestCommons([1, 5]));
+
